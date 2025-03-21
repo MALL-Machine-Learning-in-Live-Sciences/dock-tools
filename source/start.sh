@@ -1,7 +1,7 @@
 #!/bin/bash
 
 usage() {
-  echo 'Usage: docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output cafernandezlo/dock-tools:v1.0 [experimentType] [OPTIONS]'
+  echo 'Usage: docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output reposudoe/dock-tools:v1.0 [experimentType] [OPTIONS]'
   echo ''
   echo 'INFO:'
   echo '  -v $PWD/input:/input   Mounts the local input directory to the container /input directory.'
@@ -31,13 +31,13 @@ usage() {
   echo ''
   echo 'Example Vina:'
   echo '   Automatically generate box with --box_enveloping:'
-  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output cafernandezlo/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_enveloping'
+  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output reposudoe/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_enveloping'
   echo ''
   echo '   Manually define box with --box_size and --box_center:'
-  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output cafernandezlo/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_size 10 10 10.1 --box_center 11 -12 13'
+  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output reposudoe/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_size 10 10 10.1 --box_center 11 -12 13'
   echo ''
   echo '   Manually defined options:'
-  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output cafernandezlo/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_size 10 10 10.1 --box_center 11 -12 13 --cpu 20 --exhaustiveness 30 --verbosity 4 --seed 1234 --scoring ad4'
+  echo '   docker run -it --rm -v $PWD/input:/input -v $PWD/output:/output reposudoe/dock-tools:v1.0 vina 2mm3.pdb Abemaciclib.sdf --box_size 10 10 10.1 --box_center 11 -12 13 --cpu 20 --exhaustiveness 30 --verbosity 4 --seed 1234 --scoring ad4'
   echo ''
   echo 'Maintainers:'
   echo '   - Carlos Fernandez-Lozano <carlos.fernandez@udc.es>'
@@ -61,7 +61,6 @@ usage() {
   echo '   Cancéropôle (France)'
 }
 
-# Default parameter handling
 params_common=""
 
 if [ -z "$has_exhaustiveness" ]; then

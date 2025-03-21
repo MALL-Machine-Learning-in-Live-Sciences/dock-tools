@@ -107,7 +107,6 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Completar con valores por defecto donde sea necesario
 if ! $has_exhaustiveness; then
     params_common+=" --exhaustiveness 10"
 fi
