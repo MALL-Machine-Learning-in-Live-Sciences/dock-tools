@@ -1,6 +1,6 @@
 # Dock-tools
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15064460.svg)](https://doi.org/10.5281/zenodo.15064460)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15064459.svg)](https://doi.org/10.5281/zenodo.15064459)
 ![GitHub release](https://img.shields.io/github/v/release/MALL-Machine-Learning-in-Live-Sciences/dock-tools?label=release)
 ![Maintenance](https://img.shields.io/badge/Maintenance-Actively%20Maintained-brightgreen)
 ![GitHub contributors](https://img.shields.io/github/contributors/MALL-Machine-Learning-in-Live-Sciences/dock-tools)
